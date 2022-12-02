@@ -1,0 +1,124 @@
+/*
+
+Xilinx Vitis v2020.2.0 (64-bit) [Major: 2020, Minor: 2]
+SW Build 3064172 on 2020-11-18-06:24:19
+
+Process ID (PID): 2594
+License: Customer
+
+Current time: 	Tue Nov 22 10:38:21 CET 2022
+Time zone: 	Central European Standard Time (Europe/Copenhagen)
+
+OS: Ubuntu
+OS Version: 5.15.0-53-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 1920x1080
+Available screens: 1
+Available disk space: 327 GB
+
+Java version: 	11.0.2 64-bit
+Java home: 	/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /tools/Xilinx/Vitis/2020.2/tps/lnx64/javafx-sdk-11.0.2/lib:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/lib/:/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/lib//server:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/tps/lnx64/python-3.8.3/lib:/tools/Xilinx/Vitis/2020.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /tools/Xilinx/Vitis/2020.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /tools/Xilinx/Vitis
+
+User name: 	erik
+User home directory: /home/erik
+User working directory: /home/erik/Documents/SDU/Courses/EmbSys/MPSoC4Drones
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vitis
+HDI_APPROOT: /tools/Xilinx/Vitis/2020.2
+RDI_DATADIR: /tools/Xilinx/Vitis/2020.2/data
+RDI_BINDIR: /tools/Xilinx/Vitis/2020.2/bin
+
+Vitis preferences directory: /home/erik/.Xilinx/Vitis/2020.2/
+Vitis workspace directory: /home/erik/Documents/SDU/Courses/EmbSys/MPSoC4Drones/vitis
+Vitis workspace log file location: /home/erik/Documents/SDU/Courses/EmbSys/MPSoC4Drones/vitis/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vitis/2020.2
+XILINX_SDK: /tools/Xilinx/Vitis/2020.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2020.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2020.2
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectButton("Next", "New Application Project (Create a New Application Project)", "NewAppProjectWizard", "Button.NEXT");
+selectTab("Create a new platform from hardware", "New Application Project (Platform)", "NewAppProjectWizard", "CTabItem.CREATE_A_NEW_PLATFORM");
+selectButton("Browse", "New Application Project (Platform)", "NewAppProjectWizard", "Button.BROWSE");
+setFileDialog("/home/erik/Documents/SDU/Courses/EmbSys/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.xsa", "Create Platform from XSA", "SDXFileDialog", "Button.OK");
+selectRadioButton("psu_cortexa53_0", "New Application Project (Platform)", "NewAppProjectWizard", "Button.PSU_CORTEXA53_0");
+selectRadioButton("psu_cortexr5_0", "New Application Project (Platform)", "NewAppProjectWizard", "Button.PSU_CORTEXR5_0");
+selectRadioButton("psu_cortexr5_0", "New Application Project (Platform)", "NewAppProjectWizard", "Button.PSU_CORTEXR5_0");
+selectRadioButton("psu_cortexa53_0", "New Application Project (Platform)", "NewAppProjectWizard", "Button.PSU_CORTEXA53_0");
+selectButton("Next", "New Application Project (Platform)", "NewAppProjectWizard", "Button.NEXT");
+setTextField("kalman_test", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Text.APPLICATION_PROJECT_NAME");
+selectButton("Next", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Button.NEXT");
+selectButton("Next", "New Application Project (Domain)", "NewAppProjectWizard", "Button.NEXT");
+selectButton("Finish", "New Application Project (Templates)", "NewAppProjectWizard", "Button.FINISH");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+activateView("kalman_test_system", "kalman_test_system/kalman_test_system.sprj", "SystemSettingsEditor", "CTabItem.KALMAN_TEST_SYSTEM");
+selectTreeTable("lscript.ld", "kalman_test_system > kalman_test > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+setTextField("0x200000", "lscript.ld", "LscriptEditor", "Text.STACK_SIZE");
+setTextField("0x200000", "lscript.ld", "LscriptEditor", "Text.HEAP_SIZE");
+closeView("lscript.ld", "kalman_test/src/lscript.ld", "LscriptEditor", "CTabItem.LSCRIPT_LD");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("kalman_test.prj", "kalman_test_system > kalman_test", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("kalman_test.prj", "kalman_test_system > kalman_test", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectButton("Navigate to BSP Settings", "kalman_test", "SDXSettingsEditor", "Button.NAVIGATE_TO_BSP");
+selectTab("Drivers", "Drivers", "ScwEditor", "TabItem.DRIVERS");
+selectButton("Modify BSP Settings", "u96v2_sbc_mp4d", "ScwEditor", "Button.MODIFY_BSP_SETTINGS");
+selectTreeTable("Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.NavInfoProvider");
+selectTreeTable("standalone", "Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.NavInfoProvider");
+selectTreeTable("stdin", "Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.PropertyProvider");
+selectTreeTable("stdout", "Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.PropertyProvider");
+selectButton("OK", "Board Support Package Settings", "BspSettingsView", "Button.OK");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("helloworld.c", "kalman_test_system > kalman_test > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectMenuItem("File", "kalman_test", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("Refresh", "kalman_test", "WorkbenchWindow", "MenuItem.REFRESH");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("data.h", "kalman_test_system > kalman_test > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("data.h", "kalman_test/src/data.h", "CEditor", "CTabItem.DATA_H");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("data.h", "kalman_test_system > kalman_test > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("*helloworld.c", "kalman_test/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+selectTreeTable("xkalmanfilterkernel.h", "kalman_test_system > kalman_test > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("*helloworld.c", "kalman_test/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+activateView("xkalmanfilterkernel.h", "kalman_test/src/xkalmanfilterkernel.h", "CEditor", "CTabItem.XKALMANFILTERKERNEL_H");
+activateView("*helloworld.c", "kalman_test/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+activateView("xkalmanfilterkernel.h", "kalman_test/src/xkalmanfilterkernel.h", "CEditor", "CTabItem.XKALMANFILTERKERNEL_H");
+activateView("*helloworld.c", "kalman_test/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+activateView("data.h", "kalman_test/src/data.h", "CEditor", "CTabItem.DATA_H");
+activateView("xkalmanfilterkernel.h", "kalman_test/src/xkalmanfilterkernel.h", "CEditor", "CTabItem.XKALMANFILTERKERNEL_H");
+activateView("*helloworld.c", "kalman_test/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+activateView("xkalmanfilterkernel.h", "kalman_test/src/xkalmanfilterkernel.h", "CEditor", "CTabItem.XKALMANFILTERKERNEL_H");
+activateView("*helloworld.c", "kalman_test/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+selectButton("Exit", "Confirm Exit", "MessageDialogWithToggle", "Button.EXIT");
+// Exiting Xilinx Vitis with a status code '0' at 11/22/22, 11:55:37 AM CET
+// Elapsed time: 01:17:18
+

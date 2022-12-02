@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="KalmanFilterKernel" xd:componentRef="KalmanFilterKernel" xd:initiationInterval="11494" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_AXI_CPU" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="q" xd:originalName="q" xd:direction="in" xd:interfaceRef="s_axi_AXI_CPU" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="r" xd:originalName="r" xd:direction="in" xd:interfaceRef="s_axi_AXI_CPU" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="counter" xd:originalName="counter" xd:direction="in" xd:interfaceRef="counter" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="set1" xd:originalName="set1" xd:direction="in" xd:interfaceRef="set1" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="din_q0" xd:originalName="din_q0" xd:direction="in" xd:interfaceRef="din_q0" xd:busTypeRef="ap_memory" xd:arraySize="1" xd:dataWidth="32"/>
+  <xd:arg xd:name="dout_d0" xd:originalName="dout_d0" xd:direction="out" xd:interfaceRef="dout_d0" xd:busTypeRef="ap_memory" xd:arraySize="1" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="74" xd:worst-case="11493" xd:average-case="5328"/>
+  <xd:resourceEstimates xd:LUT="13173" xd:FF="5199" xd:BRAM="12" xd:DSP="25"/>
+</xd:acceleratorMap>

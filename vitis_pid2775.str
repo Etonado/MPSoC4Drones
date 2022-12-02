@@ -1,0 +1,402 @@
+/*
+
+Xilinx Vitis v2020.2.0 (64-bit) [Major: 2020, Minor: 2]
+SW Build 3064172 on 2020-11-18-06:24:19
+
+Process ID (PID): 2775
+License: Customer
+
+Current time: 	Thu Dec 01 09:15:26 CET 2022
+Time zone: 	Central European Standard Time (Europe/Copenhagen)
+
+OS: Ubuntu
+OS Version: 5.15.0-53-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 1920x1080
+Available screens: 1
+Available disk space: 318 GB
+
+Java version: 	11.0.2 64-bit
+Java home: 	/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /tools/Xilinx/Vitis/2020.2/tps/lnx64/javafx-sdk-11.0.2/lib:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/lib/:/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/lib//server:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/tps/lnx64/python-3.8.3/lib:/tools/Xilinx/Vitis/2020.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /tools/Xilinx/Vitis/2020.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /tools/Xilinx/Vitis
+
+User name: 	erik
+User home directory: /home/erik
+User working directory: /home/erik/Documents/SDU/Courses/EmbSys/MPSoC4Drones
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vitis
+HDI_APPROOT: /tools/Xilinx/Vitis/2020.2
+RDI_DATADIR: /tools/Xilinx/Vitis/2020.2/data
+RDI_BINDIR: /tools/Xilinx/Vitis/2020.2/bin
+
+Vitis preferences directory: /home/erik/.Xilinx/Vitis/2020.2/
+Vitis workspace directory: /home/erik/Documents/SDU/Courses/EmbSys/MPSoC4Drones/vitis
+Vitis workspace log file location: /home/erik/Documents/SDU/Courses/EmbSys/MPSoC4Drones/vitis/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vitis/2020.2
+XILINX_SDK: /tools/Xilinx/Vitis/2020.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2020.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2020.2
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectButton("Next", "New Application Project (Create a New Application Project)", "NewAppProjectWizard", "Button.NEXT");
+selectTab("Create a new platform from hardware", "New Application Project (Platform)", "NewAppProjectWizard", "CTabItem.CREATE_A_NEW_PLATFORM");
+selectTab("Select a platform from repository", "New Application Project (Platform)", "NewAppProjectWizard", "CTabItem.SELECT_A_PLATFORM");
+selectToolBarButton("Add", "New Application Project (Platform)", "NewAppProjectWizard", "ToolItem.ADD");
+setDirectoryDialog("/home/erik/Documents/SDU/Courses/EmbSys/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2", "Specify Custom Platform Location (Directory)", "SDXDirectoryDialog", "Button.OK");
+selectTab("Create a new platform from hardware", "New Application Project (Platform)", "NewAppProjectWizard", "CTabItem.CREATE_A_NEW_PLATFORM");
+selectButton("Browse", "New Application Project (Platform)", "NewAppProjectWizard", "Button.BROWSE");
+setFileDialog("/home/erik/Documents/SDU/Courses/EmbSys/MPSoC4Drones/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.xsa", "Create Platform from XSA", "SDXFileDialog", "Button.OK");
+selectButton("Next", "New Application Project (Platform)", "NewAppProjectWizard", "Button.NEXT");
+setTextField("kalman_filter", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Text.APPLICATION_PROJECT_NAME");
+selectButton("Next", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Button.NEXT");
+selectButton("Next", "New Application Project (Domain)", "NewAppProjectWizard", "Button.NEXT");
+selectButton("Finish", "New Application Project (Templates)", "NewAppProjectWizard", "Button.FINISH");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("src", "kalman_filter_system > kalman_filter", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Import Sources", "Explorer", "ProjectExplorer", "MenuItem.IMPORT_SOURCES");
+selectButton("Browse", "Import Sources (File system)", "FileSystemImportWizard", "Button.BROWSE");
+selectTree("src", "Import Sources (File system)", "FileSystemImportWizard", "Tree.SRC");
+selectTable("xkalmanfilterkernel.c", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("xkalmanfilterkernel.h", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectButton("Finish", "Import Sources (File system)", "FileSystemImportWizard", "Button.FINISH");
+selectTreeTable("src", "kalman_filter_system > kalman_filter", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Import Sources", "Explorer", "ProjectExplorer", "MenuItem.IMPORT_SOURCES");
+selectButton("Browse", "Import Sources (File system)", "FileSystemImportWizard", "Button.BROWSE");
+selectTree("hls_src", "Import Sources (File system)", "FileSystemImportWizard", "Tree.HLS_SRC");
+selectTable("matrix_ops.h", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("mat_test.cpp", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectButton("Finish", "Import Sources (File system)", "FileSystemImportWizard", "Button.FINISH");
+activateView("kalman_filter_system", "kalman_filter_system/kalman_filter_system.sprj", "SystemSettingsEditor", "CTabItem.KALMAN_FILTER_SYSTEM");
+selectTreeTable("helloworld.c", "kalman_filter_system > kalman_filter > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("src", "kalman_filter_system > kalman_filter", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Import Sources", "Explorer", "ProjectExplorer", "MenuItem.IMPORT_SOURCES");
+selectButton("Browse", "Import Sources (File system)", "FileSystemImportWizard", "Button.BROWSE");
+selectTree("hls_src", "Import Sources (File system)", "FileSystemImportWizard", "Tree.HLS_SRC");
+selectTable("data.h", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectButton("Finish", "Import Sources (File system)", "FileSystemImportWizard", "Button.FINISH");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("u96v2_sbc_mp4d", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Properties", "Explorer", "ProjectExplorer", "MenuItem.PROPERTIES");
+activateView("kalman_filter", "kalman_filter/kalman_filter.prj", "SDXSettingsEditor", "CTabItem.KALMAN_FILTER");
+selectHyperlink("Hardware Specification View processors memory range", "kalman_filter", "SDXSettingsEditor", "Link.HARDWARE_SPECIFICATION");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("kalman_filter.prj", "kalman_filter_system > kalman_filter", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectButton("Navigate to BSP Settings", "kalman_filter", "SDXSettingsEditor", "Button.NAVIGATE_TO_BSP");
+selectTab("Drivers", "Drivers", "ScwEditor", "TabItem.DRIVERS");
+selectButton("Modify BSP Settings", "u96v2_sbc_mp4d", "ScwEditor", "Button.MODIFY_BSP_SETTINGS");
+selectTreeTable("Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.NavInfoProvider");
+selectTreeTable("standalone", "Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.NavInfoProvider");
+selectTreeTable("stdin", "Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.PropertyProvider");
+selectTreeTable("stdout", "Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.PropertyProvider");
+selectTreeTable("psu_cortexa53_0", "Overview > drivers", "Board Support Package Settings", "BspSettingsView", "TreeViewer.NavInfoProvider");
+selectTreeTable("standalone", "Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.NavInfoProvider");
+selectButton("OK", "Board Support Package Settings", "BspSettingsView", "Button.OK");
+selectButton("Reset BSP Sources", "u96v2_sbc_mp4d", "ScwEditor", "Button.RESET_BSP_SOURCES");
+selectButton("Yes", "Reset BSP Sources", "MessageDialogWithToggle", "Button.YES");
+selectButton("Modify BSP Settings", "u96v2_sbc_mp4d", "ScwEditor", "Button.MODIFY_BSP_SETTINGS");
+selectTreeTable("Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.NavInfoProvider");
+selectTreeTable("standalone", "Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.NavInfoProvider");
+selectTreeTable("stdin", "Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.PropertyProvider");
+selectTreeTable("stdout", "Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.PropertyProvider");
+selectButton("OK", "Board Support Package Settings", "BspSettingsView", "Button.OK");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("u96v2_sbc_mp4d", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("kalman_filter", "kalman_filter_system", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("kalman_filter_system", "kalman_filter_system", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("u96v2_sbc_mp4d", "kalman_filter_system", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("platform.tcl", "u96v2_sbc_mp4d", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("platform.spr", "u96v2_sbc_mp4d", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("u96v2_sbc_mp4d", "u96v2_sbc_mp4d/platform.spr", "ScwEditor", "CTabItem.U96V2_SBC_MP4D");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("kalman_filter", "kalman_filter_system", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("u96v2_sbc_mp4d", "kalman_filter_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("kalman_filter_system.sprj", "kalman_filter_system", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lscript.ld", "kalman_filter_system > kalman_filter > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+setTextField("0x200000", "lscript.ld", "LscriptEditor", "Text.STACK_SIZE");
+setTextField("0x200000", "lscript.ld", "LscriptEditor", "Text.HEAP_SIZE");
+closeView("lscript.ld", "kalman_filter/src/lscript.ld", "LscriptEditor", "CTabItem.LSCRIPT_LD");
+activateView("helloworld.c", "kalman_filter/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+setText("/**************************************************", "Explorer", "ProjectExplorer", "StyledText");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("matrix_ops.h", "kalman_filter_system > kalman_filter > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("*helloworld.c", "kalman_filter/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("matrix_ops.h", "kalman_filter_system > kalman_filter > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("helloworld.c", "kalman_filter/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("kalman_filter_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Clean Project", "Explorer", "ProjectExplorer", "MenuItem.CLEAN_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectProblemsView("Errors", "CEditor", "TreeViewer.MarkerViewerContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("matrix_ops.h", "kalman_filter_system > kalman_filter > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+closeView("matrix_ops.h", "kalman_filter/src/matrix_ops.h", "CEditor", "CTabItem.MATRIX_OPS_H");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("matrix_ops.h", "kalman_filter_system > kalman_filter > src", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Delete", "Explorer", "ProjectExplorer", "MenuItem.DELETE");
+selectButton("OK", "Delete Resources", "RefactoringWizardDialog2", "Button.OK");
+selectTreeTable("mat_test.cpp", "kalman_filter_system > kalman_filter > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("mat_test.cpp", "kalman_filter_system > kalman_filter > src", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Delete", "Explorer", "ProjectExplorer", "MenuItem.DELETE");
+selectButton("OK", "Delete Resources", "RefactoringWizardDialog2", "Button.OK");
+selectTreeTable("kalman_filter_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("kalman_filter", "kalman_filter_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("helloworld.c", "kalman_filter_system > kalman_filter > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Design", "kalman_filter", "WorkbenchWindow", "ToolItem.DESIGN");
+selectToolBarButton("Debug", "kalman_filter", "WorkbenchWindow", "ToolItem.DEBUG");
+activateView("Vitis Serial Terminal", "Sdkterminal", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectToolBarButton("Connect to serial port", "Vitis Serial Terminal", "SDKTerminalView", "ToolItem.CONNECT_TO_SERIAL");
+selectCombo("/dev/ttyUSB1", "Connect to serial port", "SerialConnectionDialog", "ComboViewer.PORT");
+selectButton("OK", "Connect to serial port", "SerialConnectionDialog", "Button.OK");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+selectButton("OK", "Unable To Launch", "MessageDialog", "Button.OK");
+selectToolBarMenuButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarMenuButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarMenuButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+selectToolBarButton("Debug", "kalman_filter", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "kalman_filter", "WorkbenchWindow", "ToolItem.DESIGN");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("Binaries", "kalman_filter_system > kalman_filter", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarMenuButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+selectTreeTable("kalman_filter", "kalman_filter_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarMenuButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+selectTreeTable("kalman_filter_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarMenuButton("Run", "kalman_filter_system", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("Run As", "Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("1 Launch Hardware", "kalman_filter_system", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectTreeTable("kalman_filter", "kalman_filter_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarMenuButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("Run As", "Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("3 Launch on Hardware", "kalman_filter", "WorkbenchWindow", "MenuItem.3_LAUNCH_ON_HARDWARE");
+selectToolBarButton("Design", "kalman_filter", "WorkbenchWindow", "ToolItem.DESIGN");
+selectToolBarButton("Debug", "kalman_filter", "WorkbenchWindow", "ToolItem.DEBUG");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectToolBarButton("Debug", "kalman_filter", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "kalman_filter", "WorkbenchWindow", "ToolItem.DESIGN");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("xkalmanfilterkernel.h", "kalman_filter_system > kalman_filter > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("src", "kalman_filter_system > kalman_filter", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Import Sources", "Explorer", "ProjectExplorer", "MenuItem.IMPORT_SOURCES");
+selectButton("Browse", "Import Sources (File system)", "FileSystemImportWizard", "Button.BROWSE");
+selectTree("src", "Import Sources (File system)", "FileSystemImportWizard", "Tree.SRC");
+selectTable("xkalmanfilterkernel_hw.h", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectButton("Finish", "Import Sources (File system)", "FileSystemImportWizard", "Button.FINISH");
+selectTreeTable("xkalmanfilterkernel_hw.h", "kalman_filter_system > kalman_filter > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("*helloworld.c", "kalman_filter/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+activateView("xkalmanfilterkernel.h", "kalman_filter/src/xkalmanfilterkernel.h", "CEditor", "CTabItem.XKALMANFILTERKERNEL_H");
+activateView("*helloworld.c", "kalman_filter/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+activateView("xkalmanfilterkernel.h", "kalman_filter/src/xkalmanfilterkernel.h", "CEditor", "CTabItem.XKALMANFILTERKERNEL_H");
+activateView("*helloworld.c", "kalman_filter/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+activateView("xkalmanfilterkernel.h", "kalman_filter/src/xkalmanfilterkernel.h", "CEditor", "CTabItem.XKALMANFILTERKERNEL_H");
+activateView("*helloworld.c", "kalman_filter/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+activateView("Problems", "ProblemsView", "CTabItem.PROBLEMS");
+selectToolBarButton("Design", "kalman_filter", "WorkbenchWindow", "ToolItem.DESIGN");
+selectToolBarButton("Debug", "kalman_filter", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Debug", "kalman_filter", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "kalman_filter", "WorkbenchWindow", "ToolItem.DESIGN");
+activateView("Problems", "ProblemsView", "CTabItem.PROBLEMS");
+selectToolBarButton("Design", "kalman_filter", "WorkbenchWindow", "ToolItem.DESIGN");
+selectToolBarButton("Debug", "kalman_filter", "WorkbenchWindow", "ToolItem.DEBUG");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectButton("Clear", "Vitis Serial Terminal", "SDKTerminalView", "Button.CLEAR");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectButton("Clear", "Vitis Serial Terminal", "SDKTerminalView", "Button.CLEAR");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectButton("Clear", "Vitis Serial Terminal", "SDKTerminalView", "Button.CLEAR");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectButton("Clear", "Vitis Serial Terminal", "SDKTerminalView", "Button.CLEAR");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+selectToolBarButton("Debug", "kalman_filter", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "kalman_filter", "WorkbenchWindow", "ToolItem.DESIGN");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("data.h", "kalman_filter_system > kalman_filter > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("helloworld.c", "kalman_filter/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarButton("Design", "kalman_filter", "WorkbenchWindow", "ToolItem.DESIGN");
+selectToolBarButton("Debug", "kalman_filter", "WorkbenchWindow", "ToolItem.DEBUG");
+activateView("data.h", "kalman_filter/src/data.h", "CEditor", "CTabItem.DATA_H");
+closeView("data.h", "kalman_filter/src/data.h", "CEditor", "CTabItem.DATA_H");
+activateView("xkalmanfilterkernel_hw.h", "kalman_filter/src/xkalmanfilterkernel_hw.h", "CEditor", "CTabItem.XKALMANFILTERKERNEL_HW_H");
+activateView("xkalmanfilterkernel.h", "kalman_filter/src/xkalmanfilterkernel.h", "CEditor", "CTabItem.XKALMANFILTERKERNEL_H");
+activateView("helloworld.c", "kalman_filter/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+activateView("xkalmanfilterkernel.h", "kalman_filter/src/xkalmanfilterkernel.h", "CEditor", "CTabItem.XKALMANFILTERKERNEL_H");
+activateView("*helloworld.c", "kalman_filter/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+selectButton("Proceed", "Errors in Workspace", "MessageDialogWithToggle", "Button.PROCEED");
+activateView("xkalmanfilterkernel.h", "kalman_filter/src/xkalmanfilterkernel.h", "CEditor", "CTabItem.XKALMANFILTERKERNEL_H");
+activateView("*helloworld.c", "kalman_filter/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Debug", "kalman_filter", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "kalman_filter", "WorkbenchWindow", "ToolItem.DESIGN");
+selectToolBarButton("Debug", "kalman_filter", "WorkbenchWindow", "ToolItem.DEBUG");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectButton("Clear", "Vitis Serial Terminal", "SDKTerminalView", "Button.CLEAR");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+activateView("xkalmanfilterkernel.h", "kalman_filter/src/xkalmanfilterkernel.h", "CEditor", "CTabItem.XKALMANFILTERKERNEL_H");
+activateView("helloworld.c", "kalman_filter/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+activateView("xkalmanfilterkernel.h", "kalman_filter/src/xkalmanfilterkernel.h", "CEditor", "CTabItem.XKALMANFILTERKERNEL_H");
+activateView("xkalmanfilterkernel_hw.h", "kalman_filter/src/xkalmanfilterkernel_hw.h", "CEditor", "CTabItem.XKALMANFILTERKERNEL_HW_H");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+activateView("helloworld.c", "kalman_filter/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectButton("Clear", "Vitis Serial Terminal", "SDKTerminalView", "Button.CLEAR");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectButton("Clear", "Vitis Serial Terminal", "SDKTerminalView", "Button.CLEAR");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectToolBarButton("Build Debug for project kalman_filter", "kalman_filter", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "kalman_filter_system > kalman_filter", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Run", "kalman_filter", "WorkbenchWindow", "ToolItem.RUN");
+selectButton("Cancel", "WARNING", "MessageDialogWithToggle", "Button.CANCEL");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectButton("Clear", "Vitis Serial Terminal", "SDKTerminalView", "Button.CLEAR");
+selectButton("Exit", "Confirm Exit", "MessageDialogWithToggle", "Button.EXIT");
+// Exiting Xilinx Vitis with a status code '0' at 12/1/22, 10:30:39 AM CET
+// Elapsed time: 01:15:13
+

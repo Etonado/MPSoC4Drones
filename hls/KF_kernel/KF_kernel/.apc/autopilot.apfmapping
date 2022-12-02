@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="matrix_ops.h" path="/home/erik/Documents/SDU/Courses/EmbSys/MPSoC4Drones/hls/hls_src/matrix_ops.h"/>
+    <originFiles name="KF_kernel.h" path="/home/erik/Documents/SDU/Courses/EmbSys/MPSoC4Drones/hls/hls_src/KF_kernel.h"/>
+    <originFiles name="KF_kernel.cpp" path="/home/erik/Documents/SDU/Courses/EmbSys/MPSoC4Drones/hls/hls_src/KF_kernel.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="kf_test.cpp" path="/home/erik/Documents/SDU/Courses/EmbSys/MPSoC4Drones/hls/hls_src/kf_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
